@@ -645,7 +645,7 @@
 Email: ${formProps.email}
 Idea: ${formProps.idea}
 Timeline: ${formProps.timeline}
-Budget: ${formProps.budget}
+Budget: ${document.querySelector(`#budget option[value="${formProps.budget}"]`).textContent}
                 `);
 
           window.open(
