@@ -94,12 +94,11 @@
     <!-- Navigation -->
     <nav class="p-4 flex justify-between items-center">
         <div class="text-2xl font-bold flex items-center">
-            <span class="text-rust dark:text-darkcream">&lt;</span>
-            <span class="text-tangerine dark:text-darktangerine">sm0l</span>
-            <span class="text-rust dark:text-darkcream">.dev/&gt;</span>
+            <span class="text-rust dark:text-darkcream">sm0l</span>
+            <span class="text-rust dark:text-darkcream">.dev</span>
         </div>
         <div class="hidden md:flex space-x-6">
-            <a href="#about" class="hover:text-tangerine dark:hover:text-darktangerine transition-colors">about</a>
+            <a href="#services" class="hover:text-tangerine dark:hover:text-darktangerine transition-colors">services</a>
             <a href="#team" class="hover:text-tangerine dark:hover:text-darktangerine transition-colors">team</a>
             <a href="#work" class="hover:text-tangerine dark:hover:text-darktangerine transition-colors">work</a>
             <a href="#contact" class="hover:text-tangerine dark:hover:text-darktangerine transition-colors">contact</a>
@@ -126,27 +125,28 @@
     <!-- Hero Section -->
     <section class="py-16 md:py-24 px-4">
         <div class="max-w-6xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">
-                We're <span class="text-tangerine dark:text-darktangerine">sm0l</span> because we move 
+            <h1 class="max-w-[22ch] text-5xl md:text-7xl font-bold mb-6">
+                We're <span class="text-tangerine dark:text-darktangerine">smol</span> because we move 
                 <span class="relative">
                     <span class="diagonal-stripes absolute inset-0 opacity-30"></span>
-                    <span class="relative z-10">FAST</span>
+                    <span class="relative z-10">FAST</span>!
                 </span>
             </h1>
             <p class="text-xl md:text-2xl max-w-2xl leading-relaxed mb-8">
-                While other shops are busy writing 200-page proposals, we've already shipped your MVP. It's not that we're impatient — we just believe life's too short for unnecessary meetings about meetings.
+                While other shops are busy writing 200-page proposals, we've already shipped your MVP!<br><br>It's not that we're impatient — we just believe life's too short for unnecessary meetings about meetings.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <button id="openHireModal" class="bg-rust dark:bg-darkrust text-cream dark:text-darkcream px-8 py-4 rounded-md hover:bg-tangerine dark:hover:bg-darktangerine transition-colors inline-block text-center font-bold">Hire Our Speedy Hands</button>
-                <a href="#work" class="border-2 border-rust dark:border-darkrust text-rust dark:text-darkcream px-8 py-4 rounded-md hover:bg-rust hover:text-cream dark:hover:bg-darkrust transition-colors inline-block text-center font-bold">See Our Work</a>
+                <button id="openHireModal" class="bg-rust dark:bg-darkrust text-cream dark:text-darkcream px-8 py-4 rounded-md hover:bg-tangerine dark:hover:bg-darktangerine transition-colors inline-block text-center font-bold uppercase">Hire Our Speedy Hands</button>
+                <a href="#work" class="border-2 border-rust dark:border-darkrust text-rust dark:text-darkcream px-8 py-4 rounded-md hover:bg-rust hover:text-cream dark:hover:bg-darkrust transition-colors inline-block uppercase text-center font-bold">See Our Work</a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="py-16 bg-sand dark:bg-darksand px-4">
+    <section class="py-16 bg-sand dark:bg-darksand px-4" id="services">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Our Services Have <span class="text-tangerine dark:text-darktangerine">HUGE</span> Impact</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">What's on the menu?
+            </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-cream dark:bg-darkcard p-6 rounded-md pixel-border">
@@ -154,10 +154,9 @@
                         <div class="animate-pulse w-10 h-10 mr-3 flex items-center justify-center rounded-lg text-tangerine dark:text-tangerine">
                             <i data-feather="zap"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-tangerine dark:text-darktangerine">Rapid Prototyping</h3>
+                        <h3 class="text-2xl font-bold text-tangerine dark:text-darktangerine">Rapid Prototyping</h3>
                     </div>
-                    <p class="mb-4">We build webapps faster than you can say "agile methodology" three times fast. Our prototypes aren't just pretty—they actually work.</p>
-                    <div class="w-16 h-1 bg-rust dark:bg-darkrust"></div>
+                    <p class="mb-4 text-lg">We build webapps faster than you can say "agile methodology" three times. </p>
                 </div>
                 
                 <div class="bg-cream dark:bg-darkcard p-6 rounded-md pixel-border">
@@ -165,10 +164,9 @@
                         <div class="w-10 h-10 mr-3 flex items-center justify-center bg-tangerine dark:bg-darktangerine rounded-lg text-cream dark:text-darkcream">
                             <i data-feather="box"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-tangerine dark:text-darktangerine">MVPs That Impress</h3>
+                        <h3 class="text-2xl font-bold text-tangerine dark:text-darktangerine">MVPs That Impress</h3>
                     </div>
-                    <p class="mb-4">Complex workflows? Multi-platform nightmares? We eat those for breakfast and still have room for second breakfast.</p>
-                    <div class="w-16 h-1 bg-rust dark:bg-darkrust"></div>
+                    <p class="mb-4 text-lg">Complex workflows? Multi-platform nightmares? We eat those for breakfast, and still have room for second breakfast.</p>
                 </div>
                 
                 <div class="bg-cream dark:bg-darkcard p-6 rounded-md pixel-border">
@@ -176,10 +174,9 @@
                         <div class="w-10 h-10 mr-3 flex items-center justify-center bg-tangerine dark:bg-darktangerine rounded-lg text-cream dark:text-darkcream">
                             <i data-feather="layers"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-tangerine dark:text-darktangerine">JAMStack Wizardry</h3>
+                        <h3 class="text-2xl font-bold text-tangerine dark:text-darktangerine">Web Wizardry</h3>
                     </div>
-                    <p class="mb-4">We stack JAMs better than your grandma. Faster, more secure, and scalable websites that make traditional CMS solutions cry.</p>
-                    <div class="w-16 h-1 bg-rust dark:bg-darkrust"></div>
+                    <p class="mb-4 text-lg">Faster, more secure, and scalable websites that make traditional CMS solutions cry.</p>
                 </div>
             </div>
         </div>
@@ -188,7 +185,7 @@
     <!-- Team Section -->
     <section id="team" class="py-16 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">The Humans Behind It All</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">The humans doin' it</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div class="flex flex-col md:flex-row gap-6 items-center">
@@ -209,7 +206,7 @@
                             </li>
                             <li class="flex items-center">
                                 <span class="inline-block w-3 h-3 bg-tangerine dark:bg-darktangerine mr-2"></span>
-                                <span>Unhealthy obsession with alpha transparent PNGs</span>
+                                <span>Unhealthy obsession with transparent WEBPs</span>
                             </li>
                         </ul>
                     </div>
@@ -245,7 +242,7 @@
     <!-- Portfolio Section -->
     <section id="work" class="py-16 bg-sand dark:bg-darksand px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Things Our Hands Have Built</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Work, Demos and Prototypes</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
@@ -294,8 +291,8 @@
     <section id="contact" class="py-24 px-4 bg-rust dark:bg-darkrust text-cream dark:text-darkcream">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-3xl md:text-5xl font-bold mb-8">Ready for digital insanity?</h2>
-            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">Hire us for moonshots and insane experiments. We live, breathe, and occasionally snort the bleeding edge of web technology.</p>
-            <button id="ctaHireButton" class="bg-cream dark:bg-darkcream text-rust dark:text-darkrust px-10 py-4 rounded-md hover:bg-tangerine hover:text-cream dark:hover:bg-darktangerine transition-colors inline-block text-xl font-bold">Let's Get Weird Together</button>
+            <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto">Hire us for moonshots and insane experiments!<br><br>We live, breathe, and occasionally snort the bleeding edge of web technology.</p>
+            <button id="ctaHireButton" class="bg-cream dark:bg-darkcream text-rust dark:text-darkrust px-10 py-4 rounded-md hover:bg-tangerine hover:text-cream dark:hover:bg-darktangerine transition-colors inline-block text-xl font-bold uppercase">Do it, click the button!</button>
         </div>
     </section>
 
@@ -303,19 +300,11 @@
     <footer class="py-8 bg-cream dark:bg-darkbg px-4 border-t-4 border-tangerine dark:border-darktangerine">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
             <div class="text-xl font-bold mb-4 md:mb-0 flex items-center">
-                <svg class="w-6 h-6 mr-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="10" y="10" width="80" height="80" rx="6" fill="currentColor" class="text-tangerine dark:text-darktangerine" />
-                    <path d="M30 35C30 32.2386 32.2386 30 35 30H65C67.7614 30 70 32.2386 70 35V65C70 67.7614 67.7614 70 65 70H35C32.2386 70 30 67.7614 30 65V35Z" stroke="currentColor" stroke-width="4" class="text-rust dark:text-darkcream" />
-                    <path d="M40 50L50 40L60 50L50 60L40 50Z" stroke="currentColor" stroke-width="4" class="text-rust dark:text-darkcream" />
-                    <circle cx="50" cy="50" r="3" fill="currentColor" class="text-rust dark:text-darkcream" />
-                    <path d="M25 75L75 25" stroke="currentColor" stroke-width="6" stroke-linecap="round" class="text-rust dark:text-darkcream" />
-                </svg>
-                <span class="text-rust dark:text-darkcream">&lt;</span>
-                <span class="text-tangerine dark:text-darktangerine">sm0l</span>
-                <span class="text-rust dark:text-darkcream">.dev/&gt;</span>
+                <span class="text-rust dark:text-darkcream">sm0l</span>
+                <span class="text-rust dark:text-darkcream">.dev</span>
             </div>
             <div class="text-sm text-rust dark:text-darkcream">
-                Built by sm0l hands with gigantic ambitions © 2025
+                Built with ❤️ in Bengaluru © 2025
             </div>
         </div>
     </footer>
