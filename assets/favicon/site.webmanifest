@@ -1,0 +1,21 @@
+{
+  "name": "sm0l.dev",
+  "short_name": "sm0l",
+  "icons": [
+    {
+      "src": "/assets/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#FEF9E1",
+  "background_color": "#FEF9E1",
+  "display": "standalone"
+}
