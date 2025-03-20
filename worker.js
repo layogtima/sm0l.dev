@@ -84,8 +84,7 @@ export default {
 
       // Format sender information
       const fromEmail = env.EMAIL_FROM || "no-reply@example.com";
-      const fromName = env.EMAIL_FROM_NAME || "Form Submission";
-      const fromAddress = fromName ? `${fromName} <${fromEmail}>` : fromEmail;
+      const fromAddress = fromEmail;
 
       // Format the email content
       const emailSubject = "New Project Inquiry on sm0l.dev ";
