@@ -712,7 +712,9 @@
                 email: formProps.email,
                 idea: formProps.idea,
                 timeline: formProps.timeline,
-                budget: formProps.budget,
+                budget: document.querySelector(
+                  `#budget option[value="${formProps.budget}"]`
+                ).textContent,
                 timestamp: new Date().toISOString(),
               }),
             }
@@ -735,15 +737,14 @@
             "New Project Request from sm0l.dev"
           );
           const body = encodeURIComponent(`
-Email: ${formProps.email}
-Idea: ${formProps.idea}
-Timeline: ${formProps.timeline}
-Budget: ${
-            document.querySelector(
-              `#budget option[value="${formProps.budget}"]`
-            ).textContent
-          }
-                `);
+      Email: ${formProps.email}
+      Idea: ${formProps.idea}
+      Timeline: ${formProps.timeline}
+      Budget: ${
+        document.querySelector(`#budget option[value="${formProps.budget}"]`)
+          .textContent
+      }
+                      `);
 
           window.open(
             `mailto:contact@sm0l.dev?subject=${subject}&body=${body}`
